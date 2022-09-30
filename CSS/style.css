@@ -242,34 +242,37 @@ section.accueil {
     padding-bottom: 10px;
 }
 
-/* INFO */
+/* INFO et RESSOURCES */
 
 #contenu-site h2 {
-    margin: auto;
+    margin: 5%;
     text-align: center;
     font-size: max(4vw, 20px);
 }
 
-.article-info {
+.boxcards {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin: 1vw;
+    margin: 5%;
     border: solid 1px #f4f6f7;
     border-radius: 10px;
     background-color: #041729;
 }
 
-.article-info img {
+.boxcards img {
     width: 90%;
 }
 
-.article-info h3 {
+.boxcards h3 {
     color: white;
+    margin: 5%;
 }
 
-.article-info p {
+.boxcards p {
     color: #cacdd1;
+    padding: 5%;
+    text-align: left;
 }
 
 
