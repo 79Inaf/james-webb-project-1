@@ -185,7 +185,6 @@ textarea {
 /* HEADER */
 
 header {
-    margin-bottom: 190px;
     padding-top: 15px;
     padding-bottom: 20px;
     width: 100%;
@@ -238,10 +237,20 @@ nav.menu-nav ul li.btn a:hover {
 /* ACCUEIL */
 
 section.accueil {
-    margin-top: 150px;
+    margin-top: 100px;
     padding-bottom: 10px;
 }
 
+p.text-acc {
+    margin-top: 60px;
+    width: 80%;
+}
+
+img.img-acc {
+    margin-top: 60px;
+    width: 70%;
+    max-height: 350px;
+}
 
 
 /* FOOTER */
@@ -511,15 +520,4 @@ body::-webkit-scrollbar-thumb:hover {
     50% {
         border-color: #3498DB;
     }
-}
-
-
-
-/* TEXT SOULIGN */
-
-.text_soulign {
-    padding-left: 10px;
-    padding-right: 10px;
-    width: fit-content;
-    background-color: #2C3E50;
 }
