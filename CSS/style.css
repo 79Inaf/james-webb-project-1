@@ -277,19 +277,44 @@ section.accueil {
 
 /* RESSOURCES SEULEMENT */
 
+.menupage li a {
+    text-decoration: none;
+    color: #e4e9ed;
+    font-size: 0.5rem;
+}
+
+.menupage ul {
+    padding-inline-start: 0;
+    text-align: center;
+    background-color: #2c82c9;
+    font-family: 'Quicksand', Arial, sans-serif;
+    margin: 5%;
+    border-radius: 10px;
+    list-style-type: none;
+    border: solid 1px #e4e9ed;
+}
+
+.menupage p {
+    margin: 0px;
+}
+
 .essaibox {
     margin: 5%;
-    border: solid 1px #f4f6f7;
+    border: solid 1px #e4e9ed;
     border-radius: 10px;
-    background-color: #041729;
+    background-color: #043b5c;
+
 }
 
 .carte {
 
-    border: 1px solid #f2f200;
+    border: 0.3px solid #fffc7f;
     border-radius: 10px;
     margin: 10px 8px;
     padding: 15px;
+    background-color: #2c82c9;
+    /* grid-area: main; */
+
 }
 
 .carte a {
@@ -298,7 +323,9 @@ section.accueil {
 }
 
 .carte img {
-    width: 99%
+    border: 0.5px solid #2c82c9;
+    border-radius: 10px;
+    width: 99%;
 }
 
 .txtimg {
@@ -313,7 +340,89 @@ section.accueil {
     margin: 5%;
 }
 
-@media screen and (min-width: 400px) {}
+.cartereseaux {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+}
+
+/* .cartereseaux a {
+    text-decoration: none;
+}
+
+.fa-brands {
+    text-decoration: none;
+}
+
+.fa-twitter .fa-flickr .fa-facebook .fa-instagram {
+    text-decoration: none;
+} */
+
+
+@media screen and (min-width: 400px) {
+    .essaibox {
+        margin: 5%;
+        border: solid 1px #e4e9ed;
+        border-radius: 10px;
+        background-color: #043b5c;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .essaibox h3 {
+        grid-column: 1 / -1;
+    }
+
+    .carte img:hover {
+        -webkit-transform: scale(1.1);
+        /* Safari et Chrome */
+        -moz-transform: scale(1.1);
+        /* Firefox */
+        -ms-transform: scale(1.1);
+        /* Internet Explorer 9 */
+        -o-transform: scale(1.1);
+        /* Opera */
+        transform: scale(1.1);
+    }
+
+    .reseauxsociaux h3 {
+        margin: 5px;
+    }
+
+    .menupage ul {
+        padding-inline-start: 0;
+        text-align: center;
+        background-color: #2c82c9;
+        font-family: 'Quicksand', Arial, sans-serif;
+        margin: 5%;
+        border-radius: 10px;
+        display: flex;
+        justify-content: space-around;
+        padding: 10px;
+        border: solid 1px #e4e9ed;
+
+    }
+
+    .menupage li {
+        text-decoration: none;
+        color: #e4e9ed;
+        font-size: 0.5rem;
+        align-items: center;
+    }
+
+    .menupage li a:hover {
+        color: #043b5c;
+    }
+
+    .carte p:hover {
+        color: #043b5c
+    }
+
+    .menupage p {
+        display: none;
+    }
+
+}
 
 /* FOOTER */
 
