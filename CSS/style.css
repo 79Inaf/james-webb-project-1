@@ -524,7 +524,7 @@ body::-webkit-scrollbar-thumb:hover {
 
 
 
-/* AUTOTEXT */
+/* AUTOTEXT ACCUEIL*/
 
 .autotext {
     width: fit-content;
@@ -545,6 +545,69 @@ body::-webkit-scrollbar-thumb:hover {
     }
 }
 
+
+/* AUTOTEXT INFO*/
+
+.autotextinfo {
+    width: fit-content;
+    border-right: 0.15em solid #3498DB;
+    letter-spacing: 0.05em;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #3498DB;
+    }
+}
+
+/* AUTOTEXT PHOTO*/
+
+.autotextphoto {
+    width: fit-content;
+    border-right: 0.15em solid #3498DB;
+    letter-spacing: 0.05em;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #3498DB;
+    }
+}
+
+/* AUTOTEXT RESSOURCES*/
+
+.autotextressources {
+    width: fit-content;
+    border-right: 0.15em solid #3498DB;
+    letter-spacing: 0.05em;
+    animation: blink 0.75s step-end infinite;
+}
+
+@keyframes blink {
+
+    from,
+    to {
+        border-color: transparent;
+    }
+
+    50% {
+        border-color: #3498DB;
+    }
+}
 
 
 /* TEXT SOULIGN */
