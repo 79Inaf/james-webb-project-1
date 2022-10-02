@@ -489,20 +489,26 @@ div#pied-site div {
     .articleinfo {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(6, 1fr);
         grid-template-areas:
-            "imggrid imggrid h3grid h3grid h3grid"
+            "h3grid  h3grid  h3grid h3grid h3grid"
+            "imggrid imggrid pgrid  pgrid  pgrid"
+            "imggrid imggrid pgrid  pgrid  pgrid"
+            "imggrid imggrid pgrid  pgrid  pgrid"
             "imggrid imggrid pgrid  pgrid  pgrid"
             "imggrid imggrid pgrid  pgrid  pgrid"
         ;
         margin: 2.5% 5%;
-        border-radius: 20x;
+        border-radius: 20px;
     }
 
     .articleinfo img {
         grid-area: imggrid;
         padding: 1%;
         width: 98%;
+        height: 96%;
+        border-radius: 20px;
+
     }
 
     .articleinfo h3 {
@@ -513,8 +519,6 @@ div#pied-site div {
         padding: 3%;
         font-size: 2vw;
         text-align: center;
-
-
     }
 
     .articleinfo p {
