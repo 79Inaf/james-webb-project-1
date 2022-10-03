@@ -309,6 +309,10 @@ div#pied-site div {
         font-size: 40px;
     }
 
+    body {
+        background-image: url('../IMG/background-image-desktop.jpg');
+    }
+
     /* HEADER */
 
     div#tete-site {
@@ -406,6 +410,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* AUTOTEXT */
 
 .autotext {
+    font-size: max(3.5vw, 20px);
     width: fit-content;
     border-right: 0.15em solid #3498DB;
     letter-spacing: 0.05em;
