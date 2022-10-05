@@ -242,64 +242,37 @@ section.accueil {
     padding-bottom: 10px;
 }
 
-/* INFO  et RESSOURCES*/
-
-#contenu-site h2 {
-    margin: 5%;
-    text-align: center;
-    font-size: max(4vw, 20px);
-}
-
-.boxcards {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin: 5%;
-    border: solid 1px #f4f6f7;
-    border-radius: 10px;
-    background-color: #041729;
-}
-
-.boxcards img {
-    width: 90%;
-}
-
-.boxcards h3 {
-    color: white;
-    margin: 5%;
-}
-
-.boxcards p {
-    color: #cacdd1;
-    padding: 5%;
-    text-align: left;
-}
 
 /* INFO */
+
+/* https://jwst.nasa.gov/content/webbLaunch/assets/images/deployment/1000pxWide/101.png */
 
 .articleinfo {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin: 5%;
-    border: solid 1px #f4f6f7;
+    border: solid 1px #eafffd;
     border-radius: 10px;
     background-color: #041729;
 }
 
 .articleinfo img {
     width: 90%;
+    border-radius: 10px;
 }
 
 .articleinfo h3 {
-    color: white;
+    color: #eafffd;
     margin: 5%;
+    font-size: 1.5em;
 }
 
 .articleinfo p {
-    color: #cacdd1;
+    color: #eafffd;
     padding: 5%;
     text-align: left;
+    font-size: 1.25em;
 }
 
 
@@ -489,11 +462,9 @@ div#pied-site div {
     .articleinfo {
         display: grid;
         grid-template-columns: repeat(5, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         grid-template-areas:
             "h3grid  h3grid  h3grid h3grid h3grid"
-            "imggrid imggrid pgrid  pgrid  pgrid"
-            "imggrid imggrid pgrid  pgrid  pgrid"
             "imggrid imggrid pgrid  pgrid  pgrid"
             "imggrid imggrid pgrid  pgrid  pgrid"
             "imggrid imggrid pgrid  pgrid  pgrid"
@@ -506,7 +477,6 @@ div#pied-site div {
         grid-area: imggrid;
         padding: 1%;
         width: 98%;
-        height: 96%;
         border-radius: 20px;
 
     }
@@ -527,6 +497,26 @@ div#pied-site div {
         padding: 1%;
         margin: 0;
         font-size: 1.2vw;
+    }
+
+    .titrearticle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .imgarticle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+
+    /* IMG/imgPageInfo/Capture d’écran du 2022-10-03 14-09-24.png*/
+    .textarticle {
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 }
 
