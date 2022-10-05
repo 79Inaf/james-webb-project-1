@@ -285,8 +285,53 @@ img.img-acc {
     font-size: 1.25em;
 }
 
+/* PHOTO */
 
+    .box > h2 {
+        font-size: 30px;
+        font-weight: bold;
+        color: rgb(199, 214, 227);
+        font-display: swap;
+        text-align: center;
 
+    }
+      
+      .box {
+        display: block;
+        overflow: hidden;
+        margin: 0 2%;
+        box-shadow: 0 20px 30px rgba(0,0,0,.1);
+        line-height: 0;
+        border-radius: 10px;
+        margin-top: 30px;
+        align-items: center;
+      }
+      
+      .box > img {
+        width: 100%;
+        height: 100%;
+        border-radius: 10px;
+        box-shadow: 0 20px 30px rgba(0,0,0,.1);
+        border-spacing: 20px 1rem;
+      }
+      
+      .box > span {
+        font-size: 20px;
+        font-weight: bold;
+        color: rgb(199, 214, 227);
+        text-align: center;
+        display: block;
+        margin-top: auto;
+      }
+
+      .gallery-container {
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+
+      }
 
 /* FOOTER */
 
@@ -433,8 +478,239 @@ div#pied-site div {
         justify-content: center;
         align-items: center;
     }
+        /*CSS Photo*/
+.box > h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(199, 214, 227);
+    text-align: center;
+
 }
 
+.container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+    
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .8s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+    border-radius: 10px;
+  }
+  
+  .box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .box > span {
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+    color: rgb(199, 214, 227);
+  }
+  
+  .box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery-container {
+    display: flex;
+    justify-content:center;
+    margin: auto;
+    width: 700px;
+    height: 500px; 
+    
+  }
+  
+  .thumbnails {
+    position: absolute;
+    bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+  }
+  
+  .thumbnails div {
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    background: rgb(255, 253, 253);
+    border-radius: 100%;
+  }
+  
+  .thumbnails div.highlighted {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .slides {
+    margin: 0 16px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    width: 540px;
+    padding: 0 0.25rem;
+    height: 720px;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+
+
+
+  .slides > div {
+    scroll-snap-align: start;
+  }
+  
+  .slides img {
+    width: 540px;
+    object-fit: contain;
+  }
+  
+  .slides::-webkit-scrollbar {
+    display: none;
+  }
+}
+<<<<<<< HEAD
+}
+
+=======
+
+    a.menu-acc:hover {
+        font-size: 25px;
+    }
+
+    a.btn-acc {
+        font-size: 30px;
+        border-radius: 100px;
+    }
+    /*CSS Photo*/
+.box > h2 {
+    font-size: 2em;
+    font-weight: bold;
+    color: rgb(199, 214, 227);
+    text-align: center;
+
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    padding: 4% 2%;
+    box-sizing: border-box;
+    height: 100vh;
+    
+  }
+  
+  .box {
+    flex: 1;
+    overflow: hidden;
+    transition: .8s;
+    margin: 0 2%;
+    box-shadow: 0 20px 30px rgba(0,0,0,.1);
+    line-height: 0;
+    border-radius: 10px;
+  }
+  
+  .box > img {
+    width: 200%;
+    height: calc(100% - 10vh);
+    object-fit: cover; 
+    transition: .5s;
+  }
+  
+  .box > span {
+    font-size: 1em;
+    display: block;
+    text-align: center;
+    height: 10vh;
+    line-height: 2.6;
+    color: rgb(199, 214, 227);
+  }
+  
+  .box:hover { flex: 1 1 50%; }
+  .box:hover > img {
+    width: 100%;
+    height: 100%;
+  }
+
+  .gallery-container {
+    display: flex;
+    justify-content:center;
+    margin: auto;
+    width: 700px;
+    height: 500px; 
+    
+  }
+  
+  .thumbnails {
+    position: absolute;
+    bottom: 8px;
+    display: flex;
+    flex-direction: row;
+    gap: 6px;
+  }
+  
+  .thumbnails div {
+    width: 8px;
+    height: 8px;
+    cursor: pointer;
+    background: rgb(255, 253, 253);
+    border-radius: 100%;
+  }
+  
+  .thumbnails div.highlighted {
+    background-color: rgb(255, 255, 255);
+  }
+  
+  .slides {
+    margin: 0 16px;
+    display: grid;
+    grid-auto-flow: column;
+    gap: 1rem;
+    width: 540px;
+    padding: 0 0.25rem;
+    height: 720px;
+    overflow-y: auto;
+    overscroll-behavior-x: contain;
+    scroll-snap-type: x mandatory;
+    scrollbar-width: none;
+  }
+  
+  .slides > div {
+    scroll-snap-align: start;
+  }
+  
+  .slides img {
+    width: 540px;
+    object-fit: contain;
+  }
+  
+  .slides::-webkit-scrollbar {
+    display: none;
+  }
+
+ 
+}
+
+
+
+>>>>>>> photo.index
 /* SCROLL ANIMATION */
 
 .reveal-loaded .reveal [class*="reveal-"] {
