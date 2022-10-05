@@ -263,23 +263,16 @@ img.img-acc {
         text-align: center;
 
     }
-    
-    .container {
-        display: flex;
-        width: 100%;
-        padding: 4% 2%;
-        box-sizing: border-box;
-        height: 100vh;
-        display: grid;
-      }
       
       .box {
-        flex: auto;
+        display: block;
         overflow: hidden;
         margin: 0 2%;
         box-shadow: 0 20px 30px rgba(0,0,0,.1);
         line-height: 0;
         border-radius: 10px;
+        margin-top: 30px;
+        align-items: center;
       }
       
       .box > img {
@@ -296,46 +289,18 @@ img.img-acc {
         color: rgb(199, 214, 227);
         text-align: center;
         display: block;
-        margin-top: 10px;
+        margin-top: auto;
       }
 
       .gallery-container {
-        display: flex;
-        padding: 4% 2%;
-        justify-content:center;
-        margin: auto;
-        width: 700px;
-        height: 500px; 
-        
+        display: block;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+
       }
 
-      .slides > img {
-        width: 100%;
-        height: 100%;
-        border-radius: 10px;
-        box-shadow: 0 20px 30px rgba(0,0,0,.1);
-      }
-      
-      .thumbnails {
-        position: absolute;
-        bottom: 8px;
-        display: flex;
-        flex-direction: row;
-        gap: 6px;
-      }
-      
-      .thumbnails div {
-        width: 8px;
-        height: 8px;
-        cursor: pointer;
-        background: rgb(255, 253, 253);
-        border-radius: 100%;
-      }
-      
-      .thumbnails div.highlighted {
-        background-color: rgb(255, 255, 255);
-      }
-      
 /* FOOTER */
 
 footer {
