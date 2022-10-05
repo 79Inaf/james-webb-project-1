@@ -101,7 +101,7 @@ textarea {
 }
 
 .blanc {
-    color: white;
+    color: #eafffd;
 }
 
 .gris {
@@ -185,7 +185,6 @@ textarea {
 /* HEADER */
 
 header {
-    margin-bottom: 190px;
     padding-top: 15px;
     padding-bottom: 20px;
     width: 100%;
@@ -238,10 +237,21 @@ nav.menu-nav ul li.btn a:hover {
 /* ACCUEIL */
 
 section.accueil {
-    margin-top: 150px;
+    margin-top: 100px;
     padding-bottom: 10px;
 }
 
+p.text-acc {
+    margin-top: 60px;
+    width: 80%;
+}
+
+img.img-acc {
+    margin-top: 60px;
+    width: 70%;
+    height: auto;
+    border-radius: 25px;
+}
 
 /* INFO */
 
@@ -297,17 +307,6 @@ div#pied-site div {
 
     /* OPTION CSS */
 
-    p,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    label {
-        font-family: 'Arial', sans-serif;
-    }
-
     .text1 {
         font-size: 20px;
     }
@@ -344,114 +343,30 @@ div#pied-site div {
         font-size: 40px;
     }
 
-
-
-    /* GENERAL */
-
-    header {
-        margin-bottom: 190px;
-        padding-top: 30px;
-        padding-bottom: 20px;
-        width: 100%;
+    body {
+        background-image: url('../IMG/background-image-desktop.jpg');
     }
+
+    /* HEADER */
 
     div#tete-site {
-        display: flex;
+        margin-left: 30px;
+        margin-right: 30px;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
     }
 
-    div#tete-site div.titre-site {
-        width: 50%;
-    }
-
-    div#tete-site nav.menu-nav {
-        margin-left: 0px;
-        margin-right: 0px;
-        width: 50%;
-        padding-right: 30px;
-    }
-
-    p.titre-site {
-        text-align: left;
-        margin-left: 20px;
-        margin-top: 0px;
-        margin-bottom: 0px;
-    }
-
-    nav.menu-nav ul li.btn {
-        list-style-type: none;
-        display: inline-block;
-    }
-
-    nav.menu-nav ul li.btn a {
-        text-decoration: none;
-        font-weight: bold;
-        color: #fff;
-        padding-left: 20px;
-        padding-right: 20px;
-        padding-top: 10px;
-        padding-bottom: 10px;
-        font-family: 'Quicksand', Arial, sans-serif;
-        font-display: swap;
-        font-size: 16px;
-    }
-
-    nav.menu-nav ul li.btn a:hover {
-        text-decoration: none;
-        opacity: 0.6;
-        font-family: 'Quicksand', Arial, sans-serif;
-        font-display: swap;
-        transition: 0.5s all;
-        font-size: 16px;
-    }
-
-    div.pied-site {
-        height: 250px;
-    }
-
-    div.accueilcontent {
-        margin-top: 220px;
-        margin-left: auto;
+    div.titre-site {
         margin-right: auto;
     }
 
-    div.accueilcontent div {
-        width: fit-content;
+    nav.menu-nav {
         margin-left: auto;
-        margin-right: auto;
     }
 
-    div.accueilcontent h1,
-    p {
-        text-align: center;
-    }
-
-    div#tete-site div.titre-site {
-        margin-top: auto;
-    }
-
-    div#tete-site nav.menu-nav {
-        margin-left: 0px;
-    }
-
-    nav.menu-nav ul {
-        padding-left: 0px;
-    }
-
-    div.copyright p {
-        height: 28px;
-    }
-
-    a.menu-acc {
-        font-size: 25px;
-    }
-
-    a.menu-acc:hover {
-        font-size: 25px;
-    }
-
-    a.btn-acc {
-        font-size: 30px;
-        border-radius: 100px;
+    img.img-acc {
+        width: auto;
+        height: 350px;
     }
 
 
@@ -591,6 +506,7 @@ body::-webkit-scrollbar-thumb:hover {
 /* AUTOTEXT ACCUEIL*/
 
 .autotext {
+    font-size: max(3.5vw, 20px);
     width: fit-content;
     border-right: 0.15em solid #3498DB;
     letter-spacing: 0.05em;
