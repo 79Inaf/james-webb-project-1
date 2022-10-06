@@ -762,6 +762,7 @@ div#pied-site div {
         color: #eafffd;
         text-align: center;
         height: 10px;
+        font-size: 16px;
     }
 
     .reseaubox {
@@ -778,6 +779,10 @@ div#pied-site div {
 
     .reseau {
         display: block;
+    }
+
+    .reseau a {
+        text-decoration: none;
     }
 
 }
