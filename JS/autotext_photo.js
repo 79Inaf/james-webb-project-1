@@ -1,5 +1,5 @@
 const title = document.querySelector('.autotextphoto');
-const text = "titre du h2 photo"
+const text = "Les plus beaux clichés"
 
 let index = 0;
 

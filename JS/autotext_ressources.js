@@ -1,5 +1,5 @@
 const title = document.querySelector('.autotextressources');
-const text = "titre du h2 ressources"
+const text = "Ressources et actualités"
 
 let index = 0;
 
