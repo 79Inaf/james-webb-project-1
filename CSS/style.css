@@ -346,7 +346,6 @@ img.img-acc {
 .menupage li a {
     text-decoration: none;
     color: #eafffd;
-    font-size: 15px;
 }
 
 .menupage ul {
@@ -393,13 +392,12 @@ img.img-acc {
 }
 
 .txtimg {
-    font-size: 15px;
+    font-size: 30px;
     color: #eafffd;
     text-align: center;
 }
 
 .essaibox h3 {
-    font-size: 0.7rem;
     color: #eafffd;
     text-align: center;
 }
@@ -413,6 +411,7 @@ img.img-acc {
     display: flex;
     flex-direction: column;
     text-align: center;
+    font-size: 60px;
 }
 
 .reseaubox {
@@ -428,6 +427,7 @@ img.img-acc {
     font-family: 'Quicksand', Arial, sans-serif;
     text-align: center;
     margin: 35px;
+    font-size: 30px;
 }
 
 
